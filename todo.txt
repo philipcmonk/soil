@@ -1,0 +1,20 @@
+principles:
+- 2D ascii-compatible map.  we want to have a map/exploration character
+  to this game
+- time is used as the basic limiter.  clients can cheat, but they can't
+  cheat the time of the server
+- no ticks, only continuous time.  when a command comes in, we check to
+  see what has happened since the last command
+
+- perhaps every time a command comes in, we go ahead and refresh
+  everything
+- should tick allow locomotion?  ie input and output of spot.  maybe so,
+  but not yet
+
+ideas:
+- an item which rewards you for precisely hitting it at a certain moment
+  (subsecond precision for a frustrating mini-game)
+
+first step:
+- a 2d map that you can walk around, pick up wood, and put it in the
+  fire
